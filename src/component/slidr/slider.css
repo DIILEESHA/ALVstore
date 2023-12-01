@@ -1,0 +1,67 @@
+.slider_container {
+  position: relative;
+}
+.slider {
+  height: 100vh;
+  position: relative;
+}
+.slider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider_texter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.for {
+  font-size: 40px;
+  color: #696666;
+  /* padding: 20px; */
+}
+
+.for:hover {
+  color: teal;
+}
+.sm {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 5px;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.bg {
+  font-family: " PlayfairDisplay-Bold", serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #333;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.slider_btn_container {
+  display: inline-block;
+  position: relative;
+}
+
+.slider_btn {
+  color: #ddd;
+  background: teal;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Poppins-Medium", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  width: fit-content;
+  border: none;
+  padding: 15px 30px;
+}

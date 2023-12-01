@@ -1,0 +1,81 @@
+.topnav_container {
+  background-color: #222;
+  color: #b8b3b3;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins-Regular", sans-serif;
+  width: 100%;
+}
+.topnav_right {
+  display: flex;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.topnav_right h2,
+li {
+  font-size: 12px;
+  display: flex;
+  list-style: none;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+}
+.topnav_right li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+.topnav_right li:hover {
+  color: teal;
+  border-bottom: 1px solid #ddd;
+}
+.topnav_right ul {
+  text-transform: capitalize;
+  display: flex;
+}
+
+/* ................................main-nav css is start here................................ */
+.nav_container {
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+  background-color: #fff;
+}
+.nav_sections {
+  display: flex;
+  padding: 0px 60px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_suber {
+  display: flex;
+  align-items: center;
+}
+.nav_ul,
+.navul_section {
+  display: flex;
+  gap: 20px;
+  margin: 0px 50px;
+}
+.nav_title {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.nav_li {
+  text-transform: capitalize;
+  font-family: "Poppins-Regular", sans-serif;
+
+  color: #333;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav_icons {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
