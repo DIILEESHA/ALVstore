@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import ProductList from "../product/ProductList";
 import data from "./data.json";
 import "./category.css";

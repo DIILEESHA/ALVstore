@@ -1,9 +1,7 @@
 // Home.js
 import React from "react";
-import { Link } from "react-router-dom";
 import data from "../data.json";
 import "./home.css";
-import ProductList from "../../product/ProductList";
 
 const Home = () => {
   const menData = data.men.slice(0, 2); // Select first two male items
