@@ -9,6 +9,15 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .slider_texter {
   position: absolute;

@@ -6,16 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import { PrevArrow, NextArrow } from "./CustomArrows";
 import sliderData from "./sliderData.json";
 import "./slider.css";
+import { Link } from "react-router-dom";
 
 const Slid = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1600,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
@@ -32,7 +33,12 @@ const Slid = () => {
               <h2 className="bg">{sliders.sub}</h2>
               <div class="slider_btn_container">
                 <button class="slider_btn" tabindex="0">
-                  SHOP NOW
+                  <Link
+                    style={{ color: "inherit", textDecoration: "none" }}
+                    to="/shop"
+                  >
+                    SHOP NOW
+                  </Link>
                 </button>
               </div>
             </div>
