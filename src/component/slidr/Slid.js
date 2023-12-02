@@ -6,26 +6,23 @@ import "slick-carousel/slick/slick-theme.css";
 import { PrevArrow, NextArrow } from "./CustomArrows";
 import sliderData from "./sliderData.json";
 import "./slider.css";
-import Nav from "../nav/Nav";
 
 const Slid = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    // speed: 500,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // autoplaySpeed: 1900,
+    autoplaySpeed: 3000,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
 
   return (
     <div className="slider_container">
-      
       <Slider {...settings}>
-        
         {sliderData.map((sliders, index) => (
           <div className="slider" key={index}>
             <img src={sliders.image} alt="" />

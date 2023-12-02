@@ -1,0 +1,128 @@
+{
+  "men": [
+    {
+      "id": 1,
+      "cat": "men",
+      "name": "man in black sweater",
+      "image": "https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 18, "max": 20 }
+    },
+    {
+      "id": 2,
+      "cat": "men",
+      "name": "man in black",
+      "image": "https://images.unsplash.com/photo-1677278369661-2c3d44e1c95b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 15, "max": 18 }
+    },
+    {
+      "id": 3,
+      "cat": "men",
+      "name": "Men's Casual Shirt 1",
+      "image": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 25, "max": 30 }
+    },
+    {
+      "id": 4,
+      "cat": "men",
+      "name": "Men's Casual Shirt 2",
+      "image": "https://images.unsplash.com/photo-1592994238317-fcf75c5466fd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 20, "max": 25 }
+    }
+  ],
+  "women": [
+    {
+      "id": 5,
+      "cat": "women",
+
+      "name": "Women's T-Shirt 1",
+      "image": "https://images.unsplash.com/photo-1554568218-9a456cea00cf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 20, "max": 25 }
+    },
+    {
+      "id": 6,
+      "cat": "women",
+
+      "name": "Women's T-Shirt 2",
+      "image": "https://images.unsplash.com/photo-1606081430924-b6480765d470?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 18, "max": 22 }
+    },
+    {
+      "id": 7,
+      "cat": "women",
+
+      "name": "Women's Blouse 1",
+      "image": "https://images.unsplash.com/photo-1588175996685-a40693ee1087?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 30, "max": 35 }
+    },
+    {
+      "id": 8,
+      "cat": "women",
+
+      "name": "Women's Blouse 2",
+      "image": "https://images.unsplash.com/photo-1593057739369-1a2a1d4f5bd0?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": { "min": 25, "max": 30 }
+    }
+  ],
+  "tshirt": [
+    {
+      "id": 9,
+      "name": "Men's T-Shirt 3",
+      "image": "unisex_tshirt_1.jpg",
+      "price": { "min": 18, "max": 20 }
+    },
+    {
+      "id": 10,
+      "name": "Unisex T-Shirt 2",
+      "image": "unisex_tshirt_2.jpg",
+      "price": { "min": 15, "max": 18 }
+    },
+    {
+      "id": 11,
+      "name": "Men's T-Shirt 1",
+      "image": "men_tshirt_1.jpg",
+      "price": { "min": 18, "max": 20 }
+    },
+    {
+      "id": 12,
+      "name": "Men's T-Shirt 2",
+      "image": "men_tshirt_2.jpg",
+      "price": { "min": 15, "max": 18 }
+    },
+    {
+      "id": 13,
+      "name": "Men's Casual Shirt 1",
+      "image": "men_casual_1.jpg",
+      "price": { "min": 25, "max": 30 }
+    },
+    {
+      "id": 14,
+      "name": "Men's Casual Shirt 2",
+      "image": "men_casual_2.jpg",
+      "price": { "min": 20, "max": 25 }
+    },
+    {
+      "id": 15,
+      "name": "Women's T-Shirt 1",
+      "image": "women_tshirt_1.jpg",
+      "price": { "min": 20, "max": 25 }
+    },
+    {
+      "id": 16,
+      "name": "Women's T-Shirt 2",
+      "image": "women_tshirt_2.jpg",
+      "price": { "min": 18, "max": 22 }
+    },
+    {
+      "id": 17,
+      "name": "Women's Blouse 1",
+      "image": "women_blouse_1.jpg",
+      "price": { "min": 30, "max": 35 }
+    },
+    {
+      "id": 18,
+      "name": "Women's Blouse 2",
+      "image": "women_blouse_2.jpg",
+      "price": { "min": 25, "max": 30 }
+    }
+  ]
+}
