@@ -6,6 +6,7 @@ import Men from "./component/category/Men";
 import Women from "./component/category/Women";
 import Topnav from "./component/nav/Topnav";
 import Nav from "./component/nav/Nav";
+import Footer from "./component/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/product/men/" element={<Men />} />
           <Route path="/shop" element={<Tshirts />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
