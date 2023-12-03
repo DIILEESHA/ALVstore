@@ -21,7 +21,7 @@ const Women = () => {
             <h2>women</h2>
           </div>
           <h2 className="mainer">women</h2>
-          <ProductList products={womenData} />
+          <ProductList products={womenData} category="women"/>
         </>
       )}
     </div>

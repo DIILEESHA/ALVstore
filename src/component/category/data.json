@@ -67,62 +67,58 @@
     {
       "id": 9,
       "name": "Men's T-Shirt 3",
-      "image": "unisex_tshirt_1.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "price": { "min": 18, "max": 20 }
     },
     {
       "id": 10,
       "name": "Unisex T-Shirt 2",
-      "image": "unisex_tshirt_2.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/3027176/pexels-photo-3027176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "price": { "min": 15, "max": 18 }
     },
     {
       "id": 11,
       "name": "Men's T-Shirt 1",
-      "image": "men_tshirt_1.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/3378892/pexels-photo-3378892.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 18, "max": 20 }
     },
     {
       "id": 12,
       "name": "Men's T-Shirt 2",
-      "image": "men_tshirt_2.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/3524916/pexels-photo-3524916.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       "price": { "min": 15, "max": 18 }
     },
     {
       "id": 13,
       "name": "Men's Casual Shirt 1",
-      "image": "men_casual_1.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/2852917/pexels-photo-2852917.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 25, "max": 30 }
     },
     {
       "id": 14,
       "name": "Men's Casual Shirt 2",
-      "image": "men_casual_2.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/3130948/pexels-photo-3130948.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 20, "max": 25 }
     },
     {
       "id": 15,
       "name": "Women's T-Shirt 1",
-      "image": "women_tshirt_1.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/3334781/pexels-photo-3334781.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 20, "max": 25 }
     },
     {
       "id": 16,
       "name": "Women's T-Shirt 2",
-      "image": "women_tshirt_2.jpg",
+      "cat": "tshirt",
+      "image": "https://images.pexels.com/photos/2914286/pexels-photo-2914286.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 18, "max": 22 }
-    },
-    {
-      "id": 17,
-      "name": "Women's Blouse 1",
-      "image": "women_blouse_1.jpg",
-      "price": { "min": 30, "max": 35 }
-    },
-    {
-      "id": 18,
-      "name": "Women's Blouse 2",
-      "image": "women_blouse_2.jpg",
-      "price": { "min": 25, "max": 30 }
     }
   ]
 }

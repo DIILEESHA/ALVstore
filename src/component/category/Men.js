@@ -23,7 +23,7 @@ const Men = () => {
           </div>
           <h2 className="mainer">men</h2>
 
-          <ProductList products={menData} />
+          <ProductList products={menData} category="men"/>
         </>
       )}
     </div>
