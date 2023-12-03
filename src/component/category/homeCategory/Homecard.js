@@ -2,6 +2,7 @@
 import React from "react";
 import data from "../data.json";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const menData = data.men.slice(0, 2); // Select first two male items
@@ -21,14 +22,19 @@ const Home = () => {
 
       <div className="home_grid">
         {mixedData.map((product) => (
-          <div key={product.id} className="home_product_sub">
-            <img src={product.image} alt={product.name} />
-            <h2>{product.cat}</h2>
-            <h3>{product.name}</h3>
-            <h4>
-              ${product.price.min} - ${product.price.max}
-            </h4>
-          </div>
+          <Link
+            style={{ color: "inherit", textDecoration: "none" }}
+            to={`/product/${product.cat}/${product.id}`}
+          >
+            <div key={product.id} className="home_product_sub">
+              <img src={product.image} alt={product.name} />
+              <h2>{product.cat}</h2>
+              <h3>{product.name}</h3>
+              <h4>
+                ${product.price.min} - ${product.price.max}
+              </h4>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
