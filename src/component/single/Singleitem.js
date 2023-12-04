@@ -6,6 +6,9 @@ import "./single.css";
 import "react-image-lightbox/style.css"; // Import the styles
 import { CiMaximize1 } from "react-icons/ci";
 import AddToCart from "../addtocart/AddToCart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaRegDotCircle } from "react-icons/fa";
 
 const SingleItemDetail = ({}) => {
   const { category, itemId } = useParams();
@@ -14,6 +17,7 @@ const SingleItemDetail = ({}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const navigate = useNavigate();
+  const notify = () => toast("Wow so easy!");
 
   const itemData = data[category]?.find(
     (item) => item.id === parseInt(itemId, 10)
@@ -52,6 +56,7 @@ const SingleItemDetail = ({}) => {
 
     localStorage.setItem("cart", JSON.stringify(updatedCart));
 
+    toast("Item added to cart!", { type: "success" });
     // navigate("/cart");
   };
 
@@ -100,18 +105,108 @@ const SingleItemDetail = ({}) => {
           ))}
         </div>
       </div>
-      <div className="single_sub_item_detail">
-        <h2>{itemData.cat}</h2>
-        <p>Price: ${itemData.price.min * quantity}</p>
+      <div className="single_sub_item_detail az">
+        <h3>{itemData.cat}</h3>
+        {/* <p>Price: ${itemData.price.min * quantity}</p>
+         */}
+        <h2>{itemData.name}</h2>
+        <div className="price_ranger">
+          <div className="i">
+            <h5>{itemData.price.min && itemData.price.max}$</h5>
+            <h4> & Free Shipping</h4>
+          </div>
 
-        <div className="quantity-controls">
-        <button onClick={() => setQuantity(Math.max(quantity - 1, 1))}>-</button>
-          <span>{quantity}</span>
-          <button onClick={() => setQuantity(quantity + 1)}>+</button>
+          <p>{itemData.description}</p>
+          <hr className="sudo" />
+          <div style={{ margin: "20px 0" }} className="quantity-controls">
+            <span onClick={() => setQuantity(Math.max(quantity - 1, 1))}>
+              -
+            </span>
+            <span>{quantity}</span>
+            <span onClick={() => setQuantity(quantity + 1)}>+</span>
+            <span onClick={handleAddToCart}>Add to Cart</span>
+          </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+          {/* <AddToCart item={{ name: itemData.cat, image: itemData.image }} /> */}
+          {/* <button onClick={handleAddToCart}>Add to Cart</button> */}
         </div>
-        <button onClick={handleAddToCart}>Add to Cart</button>
-        {/* <AddToCart item={{ name: itemData.cat, image: itemData.image }} /> */}
-        {/* <button onClick={handleAddToCart}>Add to Cart</button> */}
+        <hr className="sudo" />
+
+        <h6 className="descriptione">description</h6>
+        <hr className="sudo" />
+
+        <h4 className="productr">about the product</h4>
+        <p className="product_descri">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          impedit autem aperiam tempore quos. Suscipit recusandae voluptatibus
+          repudiandae aut error.
+        </p>
+        <ul className="product_ulr">
+          <li>
+            <FaRegDotCircle className="dvx" />
+            100% Cotton
+          </li>
+          <li>
+            <FaRegDotCircle className="dvx" />
+            260gsm
+          </li>
+          <li>
+            <FaRegDotCircle className="dvx" />
+            Breathable Fabric
+          </li>
+        </ul>
+
+        <hr className="sudo" />
+
+        <h4 className="productr">SIZE & FIT</h4>
+
+        <ul className="product_ulr">
+          <li>
+            {" "}
+            <FaRegDotCircle className="dvx" />
+            Model is wearing size M and is 6'1"
+          </li>
+          <li>
+            {" "}
+            <FaRegDotCircle className="dvx" />
+            Standard fit for a relaxed, easy feel
+          </li>
+          <li>
+            {" "}
+            <FaRegDotCircle className="dvx" />
+            100% Cotton
+          </li>
+        </ul>
+        <hr className="sudo" />
+
+        <h4 className="productr">FREE DELIVERY & RETURNS</h4>
+        <p className="product_descri">
+          Free standard delivery on orders over $60.
+        </p>
+        <ul className="product_ulr">
+          <li>
+            {" "}
+            <FaRegDotCircle className="dvx" />
+            You can return your order for any reason, free of charge, within 30
+            days
+          </li>
+          <li>
+            {" "}
+            <FaRegDotCircle className="dvx" />
+            We also offer a Free-of-Charge shipping label
+          </li>
+        </ul>
       </div>
 
       {lightboxIsOpen && (

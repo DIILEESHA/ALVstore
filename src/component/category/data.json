@@ -3,28 +3,32 @@
     {
       "id": 1,
       "cat": "men",
-      "name": "man in black sweater",
+      "name": "Ethan Blackwood",
+      "description": "A stylish choice, this black sweater for men effortlessly blends comfort and fashion. Ideal for various occasions, its versatile design complements your wardrobe, providing warmth and a trendy look.",
       "image": "https://images.unsplash.com/photo-1578681994506-b8f463449011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 18, "max": 20 }
     },
     {
       "id": 2,
       "cat": "men",
-      "name": "man in black",
+      "name": "Liam Shadow",
+      "description": "Embrace a timeless look with our 'Man in Black' ensemble. This men's fashion piece exudes confidence, offering a sleek and sophisticated style that stands out on any occasion.",
       "image": "https://images.unsplash.com/photo-1677278369661-2c3d44e1c95b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 15, "max": 18 }
     },
     {
       "id": 3,
       "cat": "men",
-      "name": "Men's Casual Shirt 1",
+      "name": "Oliver Casualton",
+      "description": "Elevate your casual wardrobe with Men's Casual Shirt 1. Crafted for comfort and style, it's a perfect choice for laid-back elegance. Versatility meets fashion in this wardrobe essential.",
       "image": "https://images.unsplash.com/photo-1627225925683-1da7021732ea?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 25, "max": 30 }
     },
     {
       "id": 4,
       "cat": "men",
-      "name": "Men's Casual Shirt 2",
+      "name": "William Smartwood",
+      "description": "Make a statement with Men's Casual Shirt 2. Combining modern style with comfort, this shirt is perfect for casual outings. The unique design adds a touch of flair to your wardrobe.",
       "image": "https://images.unsplash.com/photo-1592994238317-fcf75c5466fd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 20, "max": 25 }
     }
@@ -33,32 +37,32 @@
     {
       "id": 5,
       "cat": "women",
-
-      "name": "Women's T-Shirt 1",
+      "name": "Emma Trendsetter",
+      "description": "Women's T-Shirt 1 strikes the perfect balance between comfort and style. With a flattering fit and vibrant design, it's a versatile addition to your collection, suitable for various occasions.",
       "image": "https://images.unsplash.com/photo-1554568218-9a456cea00cf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 20, "max": 25 }
     },
     {
       "id": 6,
       "cat": "women",
-
-      "name": "Women's T-Shirt 2",
+      "name": "Olivia Chicworthy",
+      "description": "Express your personality with Women's T-Shirt 2. The trendy design and comfortable fit make it a go-to choice for casual days. Stay fashionable and comfortable with this wardrobe staple.",
       "image": "https://images.unsplash.com/photo-1606081430924-b6480765d470?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 18, "max": 22 }
     },
     {
       "id": 7,
       "cat": "women",
-
-      "name": "Women's Blouse 1",
+      "name": "Ava Elegancia",
+      "description": "Elevate your elegance with Women's Blouse 1. Perfect for formal or casual occasions, this blouse combines sophistication and comfort, adding a touch of class to your wardrobe.",
       "image": "https://images.unsplash.com/photo-1588175996685-a40693ee1087?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 30, "max": 35 }
     },
     {
       "id": 8,
       "cat": "women",
-
-      "name": "Women's Blouse 2",
+      "name": "Sophia Graceful",
+      "description": "Radiate confidence with Women's Blouse 2. The exquisite design and flattering fit make it a versatile choice for various events. Elevate your style with this chic and comfortable blouse.",
       "image": "https://images.unsplash.com/photo-1593057739369-1a2a1d4f5bd0?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": { "min": 25, "max": 30 }
     }
@@ -66,57 +70,65 @@
   "tshirt": [
     {
       "id": 9,
-      "name": "Men's T-Shirt 3",
+      "name": "Jackson Coolstyle",
       "cat": "tshirt",
+      "description": "Men's T-Shirt 3 is a wardrobe essential. Its comfortable fabric and classic design make it perfect for everyday wear. Stay cool and stylish with this timeless piece.",
       "image": "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "price": { "min": 18, "max": 20 }
     },
     {
       "id": 10,
-      "name": "Unisex T-Shirt 2",
+      "name": "Sophie Urbanite",
       "cat": "tshirt",
+      "description": "Unisex T-Shirt 2 offers a relaxed yet stylish look for anyone. The gender-neutral design and soft fabric ensure comfort, making it a versatile addition to your casual wardrobe.",
       "image": "https://images.pexels.com/photos/3027176/pexels-photo-3027176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "price": { "min": 15, "max": 18 }
     },
     {
       "id": 11,
-      "name": "Men's T-Shirt 1",
+      "name": "Mason Trendsetter",
       "cat": "tshirt",
+      "description": "Unleash your casual style with Men's T-Shirt 1. The attractive design and comfortable fit make it a must-have for everyday wear, adding a trendy touch to your wardrobe.",
       "image": "https://images.pexels.com/photos/3378892/pexels-photo-3378892.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 18, "max": 20 }
     },
     {
       "id": 12,
-      "name": "Men's T-Shirt 2",
+      "name": "Grace Casualista",
       "cat": "tshirt",
+      "description": "Stay casual and chic with Men's T-Shirt 2. The modern design and soft fabric provide both style and comfort, making it an ideal choice for any casual outing.",
       "image": "https://images.pexels.com/photos/3524916/pexels-photo-3524916.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
       "price": { "min": 15, "max": 18 }
     },
     {
       "id": 13,
-      "name": "Men's Casual Shirt 1",
+      "name": "Aiden Comforto",
       "cat": "tshirt",
+      "description": "Experience comfort and style with Men's Casual Shirt 1. The versatile design and quality fabric make it perfect for various occasions, blending casual and smart effortlessly.",
       "image": "https://images.pexels.com/photos/2852917/pexels-photo-2852917.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 25, "max": 30 }
     },
     {
       "id": 14,
-      "name": "Men's Casual Shirt 2",
+      "name": "Harper Stylista",
       "cat": "tshirt",
+      "description": "Men's Casual Shirt 2 seamlessly combines casual and stylish. The unique design and comfortable fabric offer a relaxed yet fashionable look, making it a standout piece in your wardrobe.",
       "image": "https://images.pexels.com/photos/3130948/pexels-photo-3130948.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 20, "max": 25 }
     },
     {
       "id": 15,
-      "name": "Women's T-Shirt 1",
+      "name": "Isabella Trendista",
       "cat": "tshirt",
+      "description": "Add a touch of flair to your wardrobe with Women's T-Shirt 1. The vibrant design and comfortable fit make it an ideal choice for casual days with a trendy twist.",
       "image": "https://images.pexels.com/photos/3334781/pexels-photo-3334781.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 20, "max": 25 }
     },
     {
       "id": 16,
-      "name": "Women's T-Shirt 2",
+      "name": "Elijah Fashionique",
       "cat": "tshirt",
+      "description": "Make a fashion statement with Women's T-Shirt 2. The stylish design and soft fabric provide both comfort and flair, ensuring you stay trendy and relaxed on any occasion.",
       "image": "https://images.pexels.com/photos/2914286/pexels-photo-2914286.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
       "price": { "min": 18, "max": 22 }
     }

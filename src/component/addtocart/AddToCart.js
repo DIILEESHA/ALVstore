@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { Link } from "react-router-dom";
 import { FaRegWindowClose } from "react-icons/fa";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -32,6 +34,9 @@ const CartPage = () => {
     // Implement your checkout logic here
     console.log("Checkout clicked");
   };
+
+
+  
 
   return (
     <div className="card">

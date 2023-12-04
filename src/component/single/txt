@@ -1,0 +1,23 @@
+<div className="quantity-controls">
+          <button onClick={() => setQuantity(Math.max(quantity - 1, 1))}>
+            -
+          </button>
+          <span>{quantity}</span>
+          <button onClick={() => setQuantity(quantity + 1)}>+</button>
+        </div>
+        <button onClick={handleAddToCart}>Add to Cart</button>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+        {/* <AddToCart item={{ name: itemData.cat, image: itemData.image }} /> */}
+        {/* <button onClick={handleAddToCart}>Add to Cart</button> */}
+      </div>
