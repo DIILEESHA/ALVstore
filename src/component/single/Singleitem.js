@@ -1,16 +1,19 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import data from "../category/data.json";
 import Lightbox from "react-image-lightbox";
 import "./single.css";
 import "react-image-lightbox/style.css"; // Import the styles
 import { CiMaximize1 } from "react-icons/ci";
+import AddToCart from "../addtocart/AddToCart";
 
-const SingleItemDetail = () => {
+const SingleItemDetail = ({}) => {
   const { category, itemId } = useParams();
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [quantity, setQuantity] = useState(1);
+  const navigate = useNavigate();
 
   const itemData = data[category]?.find(
     (item) => item.id === parseInt(itemId, 10)
@@ -19,6 +22,38 @@ const SingleItemDetail = () => {
   if (!itemData) {
     return <div>Item not found</div>;
   }
+
+  const handleAdd = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleMinus = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handleAddToCart = () => {
+    // Calculate the total price based on the minimum price
+    const totalPrice = itemData.price.min * quantity;
+
+    // Create an object representing the item
+    const newItem = {
+      id: itemData.id,
+      name: itemData.name,
+      image: itemData.image,
+      price: totalPrice,
+      quantity: quantity,
+    };
+
+    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const updatedCart = [...existingCartItems, newItem];
+
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+
+    // navigate("/cart");
+  };
 
   const images = [
     itemData.image,
@@ -49,7 +84,7 @@ const SingleItemDetail = () => {
               <img
                 key={index}
                 src={imageUrl}
-                alt={`Image ${index + 1}`}
+                alt={``}
                 className="thumbnail"
                 onClick={() => openLightbox(0)}
               />
@@ -65,9 +100,20 @@ const SingleItemDetail = () => {
           ))}
         </div>
       </div>
-      <div className="single_sub_item_detail">2</div>
+      <div className="single_sub_item_detail">
+        <h2>{itemData.cat}</h2>
+        <p>Price: ${itemData.price.min * quantity}</p>
 
-      {/* lightbox */}
+        <div className="quantity-controls">
+        <button onClick={() => setQuantity(Math.max(quantity - 1, 1))}>-</button>
+          <span>{quantity}</span>
+          <button onClick={() => setQuantity(quantity + 1)}>+</button>
+        </div>
+        <button onClick={handleAddToCart}>Add to Cart</button>
+        {/* <AddToCart item={{ name: itemData.cat, image: itemData.image }} /> */}
+        {/* <button onClick={handleAddToCart}>Add to Cart</button> */}
+      </div>
+
       {lightboxIsOpen && (
         <Lightbox
           mainSrc={images[photoIndex]}

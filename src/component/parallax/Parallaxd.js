@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
+import { Parallax} from "react-parallax";
 import "./para.css";
 import { Link } from "react-router-dom";
 

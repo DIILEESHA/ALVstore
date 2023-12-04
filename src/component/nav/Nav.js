@@ -75,7 +75,10 @@ const Nav = () => {
         <div className="nav_sub">
           <div className="nav_icons">
             <BiSearch />
-            <BiCart />
+
+            <Link to="/cart">
+              <BiCart />
+            </Link>
             <BiHeart />
           </div>
         </div>

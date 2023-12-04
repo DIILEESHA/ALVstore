@@ -8,6 +8,7 @@ import Topnav from "./component/nav/Topnav";
 import Nav from "./component/nav/Nav";
 import Footer from "./component/footer/Footer";
 import Singleitem from "./component/single/Singleitem";
+import AddToCart from "./component/addtocart/AddToCart";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/product/women/" element={<Women />} />
           <Route path="/product/men/" element={<Men />} />
           <Route path="/shop" element={<Tshirts />} />
+          <Route path="/cart" element={<AddToCart />} />
           <Route path="/product/:category/:itemId" element={<Singleitem />} />
         </Routes>
         <Footer />

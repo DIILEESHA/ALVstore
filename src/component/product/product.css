@@ -46,3 +46,11 @@
   opacity: 70%;
   color: #333;
 }
+
+.lp {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
