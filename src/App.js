@@ -16,15 +16,16 @@ function App() {
       <BrowserRouter>
         <Topnav />
         <Nav />
+        <Home/>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/product/women/" element={<Women />} />
           <Route path="/product/men/" element={<Men />} />
           <Route path="/shop" element={<Tshirts />} />
           <Route path="/cart" element={<AddToCart />} />
-          <Route path="/product/:category/:itemId" element={<Singleitem />} />
+          <Route path="/product/:category/:itemId" element={<Singleitem />} /> */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

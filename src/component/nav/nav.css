@@ -40,7 +40,8 @@ li {
   z-index: 1000;
   position: sticky;
   background-color: #fff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(132, 136, 139, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(132, 136, 139, 0.15) 0px 2px 6px 2px;
 }
 .nav_sections {
   display: flex;
@@ -81,6 +82,111 @@ li {
 }
 .nav_icons {
   display: flex;
+  cursor: pointer;
   gap: 10px;
   font-size: 20px;
+}
+.hamburger_menu,
+.menu_ul {
+  display: none;
+}
+
+@media screen and (max-width: 872px) {
+  .nav_ul {
+    padding: 0 0px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .navul_section {
+    display: none;
+  }
+
+  .hamburger_menu {
+    display: flex;
+  }
+  .fa-thin {
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1000;
+    color: teal;
+  }
+  .menu_option {
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    visibility: visible;
+    z-index: 1;
+    padding: auto 100px;
+    opacity: 1; /* Fully opaque */
+    transition: 0.5s all ease-in-out;
+  }
+  .duka{
+  }
+
+  .menu_ul {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    gap: 20px;
+    height: 100vh;
+    position: relative;
+  }
+  .uk {
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd;
+    right: 30px;
+  }
+
+  .menu_li {
+    font-size: 14px;
+    color: #fff; /* White text for better visibility on a dark background */
+    font-family: "poppins-Regular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .hjt {
+    width: 60%;
+    border: 1px solid #535151;
+    padding: 15px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  .hjt:hover {
+    border-top-color: teal;
+    border-left-color: yellow;
+    border-right-color: red;
+    border-bottom-color: teal;
+    cursor: pointer;
+    transition: 0.7s all ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 817px) {
+  .topnav_right,
+  .nav_sections {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .topnav_right:nth-child(2) {
+    display: none;
+  }
 }

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { BiCart, BiHeart, BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdClose } from "react-icons/md";
 
 const Nav = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="nav_container">
       <div className="nav_sections">
@@ -80,8 +83,33 @@ const Nav = () => {
               <BiCart />
             </Link>
             <BiHeart />
+            <div className="hamburger_menu" onClick={() => setOpen(!isOpen)}>
+              <RxHamburgerMenu className="rusa" />
+            </div>
           </div>
         </div>
+      </div>
+      <div className="menu_option duka" style={{ right: isOpen ? "0px" : "-50vw" }}>
+        <ul className="menu_ul">
+          <div className="hjt" onClick={() => setOpen(!isOpen)}>
+            <li className="menu_li">buy t-shirts</li>
+          </div>
+          <div className="hjt" onClick={() => setOpen(!isOpen)}>
+            <li className="menu_li">women</li>
+          </div>
+          <div className="hjt" onClick={() => setOpen(!isOpen)}>
+            <li className="menu_li">men</li>
+          </div>
+          <div className="hjt" onClick={() => setOpen(!isOpen)}>
+            <li className="menu_li">about</li>
+          </div>
+          <div className="hjt" onClick={() => setOpen(!isOpen)}>
+            <li className="menu_li">contact</li>
+          </div>
+          <div className="hamburger_menu uk" onClick={() => setOpen(!isOpen)}>
+            <MdClose className="rusa" />
+          </div>
+        </ul>
       </div>
     </div>
   );
