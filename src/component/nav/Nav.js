@@ -77,12 +77,12 @@ const Nav = () => {
         </div>
         <div className="nav_sub">
           <div className="nav_icons">
-            <BiSearch />
+            <BiSearch className="bns" stylw={{ cursor: "pointer" }} />
 
             <Link to="/cart">
-              <BiCart />
+              <BiCart stylw={{ cursor: "pointer" }} />
             </Link>
-            <BiHeart />
+            <BiHeart className="bns" stylw={{ cursor: "pointer" }} />
             <div className="hamburger_menu" onClick={() => setOpen(!isOpen)}>
               <RxHamburgerMenu className="rusa" />
             </div>

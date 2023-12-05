@@ -134,7 +134,7 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 435px) {
   .home_grid {
     row-gap: 0px;
   }
@@ -142,6 +142,6 @@
     height: 40vh;
   }
   .home_container{
-    padding-bottom: 0px;
+    padding-bottom: 54px;
   }
 }

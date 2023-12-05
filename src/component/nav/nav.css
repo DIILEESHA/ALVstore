@@ -82,7 +82,6 @@ li {
 }
 .nav_icons {
   display: flex;
-  cursor: pointer;
   gap: 10px;
   font-size: 20px;
 }
@@ -104,6 +103,7 @@ li {
 
   .hamburger_menu {
     display: flex;
+    cursor: pointer;
   }
   .fa-thin {
     font-size: 35px;
@@ -174,7 +174,7 @@ li {
     cursor: pointer;
     transition: 0.9s all ease;
     background-color: rgba(0, 0, 0, 0.3);
-    border-radius:10px;
+    border-radius: 10px;
     opacity: 90%;
   }
 }
@@ -192,29 +192,39 @@ li {
   }
 }
 
+@media screen and (max-width: 543px) {
+  .topnav_right,
+  .nav_sections {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 500px) {
-  .menu_option{
+  .menu_option {
     width: 60vw;
   }
-  .hjt{
+  .hjt {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .menu_option{
+  .menu_option {
     width: 60vw;
   }
-  .hjt{
+  .hjt {
     width: 100%;
+  }
+  .bns {
+    display: none;
   }
 }
 
 @media screen and (max-width: 290px) {
-  .menu_option{
+  .menu_option {
     width: 100vw;
   }
-  .hjt{
+  .hjt {
     width: 100%;
   }
 }

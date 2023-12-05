@@ -27,6 +27,7 @@
 .card_sm_divide {
   display: flex;
   gap: 10px;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -38,6 +39,7 @@
 
 .card_grid_main {
   padding: 30px 60px;
+  
   display: grid;
   gap: 20px;
   grid-template-columns: 3fr 1fr;
@@ -52,6 +54,7 @@
   border-radius: 3px;
   padding: 10px;
   background-color: #eeebeb;
+  
 }
 .card_second h2 {
   font-family: "poppins-regular", sans-serif;
@@ -65,6 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .card_sm_flex h2,
 h3 {
@@ -111,9 +115,7 @@ h3 {
 }
 .fmk {
   /* width: 200px; */
-
 }
-
 
 .lp {
   height: 80vh;
@@ -132,19 +134,19 @@ h3 {
   font-family: "poppins-Regular", sans-serif;
   font-weight: 600;
 }
-.lp button{
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    background-color: #222;
-    color: #ddd;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 14px;
-    text-transform: capitalize;
+.lp button {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: #222;
+  color: #ddd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 /* toastStyles.css */
@@ -178,3 +180,33 @@ h3 {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1219px) {
+  .card_grid_main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tun {
+    overflow-y: scroll;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .card_sm {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_sm_divide {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card_img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .fttt{
+    width: 100%;
+  }
+}

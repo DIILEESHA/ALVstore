@@ -127,6 +127,10 @@
   }
   .footer_sub_grid li > p {
     width: 100%;
+  }.copyright{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4;
   }
 
 }

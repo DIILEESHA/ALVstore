@@ -74,3 +74,34 @@
   border: none;
   padding: 15px 30px;
 }
+@media screen and (max-width: 657px) {
+  .slider_texter {
+    padding: 0 60px;
+  }
+  .bg {
+    font-size: 45px;
+  }
+  .sm {
+    font-size: 20px;
+  }
+  .slider {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider_texter {
+    padding: 0 60px;
+  }
+  .bg {
+    font-size: 35px;
+  }
+  .sm {
+    font-size: 20px;
+  }
+  .slider {
+    height: 76vh;
+  }
+  .slider_btn{
+    font-size: 14px;
+  }
+}

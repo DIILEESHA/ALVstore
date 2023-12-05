@@ -61,11 +61,11 @@ const CartPage = () => {
       ) : (
         <>
           <div className="card_grid_main">
-            <div className="card_sub_main">
+            <div className="card_sub_main tun">
               {cartItems.map((item) => (
                 <div className="cardert" key={item.id}>
                   <div className="card_sm">
-                    <div className="card_sm_divide">
+                    <div className="card_sm_divide fttt">
                       <div className="card_img">
                         <img src={item.image} alt={item.name} />
                       </div>

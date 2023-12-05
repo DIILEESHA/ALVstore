@@ -16,7 +16,7 @@ const Slid = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1600,
+    autoplaySpeed: 2800,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
   };
