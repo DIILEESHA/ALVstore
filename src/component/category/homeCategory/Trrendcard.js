@@ -16,7 +16,7 @@ const Trrendcard = () => {
   }, []);
 
   return (
-    <div className="home_container">
+    <div className="home_container ">
       <h2 className="home_title">SUMMER COLLECTION</h2>
       <h1 className="home_main_title">On Sale T-Shirts</h1>
 
