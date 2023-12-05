@@ -191,3 +191,30 @@ li {
     display: none;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .menu_option{
+    width: 60vw;
+  }
+  .hjt{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu_option{
+    width: 60vw;
+  }
+  .hjt{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .menu_option{
+    width: 100vw;
+  }
+  .hjt{
+    width: 100%;
+  }
+}

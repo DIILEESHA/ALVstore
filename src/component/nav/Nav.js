@@ -91,7 +91,7 @@ const Nav = () => {
       </div>
       <div
         className="menu_option duka"
-        style={{ right: isOpen ? "0px" : "-50vw" }}
+        style={{ right: isOpen ? "0px" : "-50000vw" }}
       >
         <ul className="menu_ul">
           <div className="hjt" onClick={() => setOpen(!isOpen)}>

@@ -24,7 +24,7 @@ function App() {
           <Route path="/cart" element={<AddToCart />} />
           <Route path="/product/:category/:itemId" element={<Singleitem />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

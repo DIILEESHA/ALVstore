@@ -8,7 +8,7 @@ function RelatedItems({ category }) {
 
   const slicer = relatedItems.slice(0,4)
   return (
-    <div className="product_container">
+    <div className="product_container dop">
       <div className="product_grid">
         {slicer.map((item) => (
           <Link

@@ -121,8 +121,8 @@
 }
 
 @media screen and (max-width: 400px) {
-  .productgrid {
-    row-gap: 0px;
+  .product_grid {
+    row-gap: 20px;
   }
   .product_sub img {
     height: 40vh;
