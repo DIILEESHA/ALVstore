@@ -21,6 +21,11 @@ const Slid = () => {
     nextArrow: <NextArrow />,
   };
 
+  const handleClicks = () => {
+    // Scroll to the top of the SingleItemDetail component
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="slider_container">
       <Slider {...settings}>
@@ -32,11 +37,8 @@ const Slid = () => {
               <h2 className="sm">{sliders.text}</h2>
               <h2 className="bg">{sliders.sub}</h2>
               <div class="slider_btn_container">
-                <button class="slider_btn" tabindex="0">
-                  <Link
-                    className="linka"
-                    to="/shop"
-                  >
+                <button onClick={handleClicks} class="slider_btn">
+                  <Link className="linka" to="/shop">
                     SHOP NOW
                   </Link>
                 </button>

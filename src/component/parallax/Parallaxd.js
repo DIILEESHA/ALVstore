@@ -1,9 +1,13 @@
 import React from "react";
-import { Parallax} from "react-parallax";
+import { Parallax } from "react-parallax";
 import "./para.css";
 import { Link } from "react-router-dom";
 
 const Parallaxd = () => {
+  const handleClicks = () => {
+    // Scroll to the top of the SingleItemDetail component
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="para">
       <Parallax
@@ -19,11 +23,8 @@ const Parallaxd = () => {
             <h1>Be different in your own way!</h1>
             <h2>Find your unique style.</h2>
 
-            <Link
-             className="linka"
-              to="/shop"
-            >
-              <button>shop collection</button>
+            <Link className="linka" to="/shop">
+              <button onClick={handleClicks}>shop collection</button>
             </Link>
           </div>
         </div>

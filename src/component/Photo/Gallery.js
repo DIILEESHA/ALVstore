@@ -1,7 +1,12 @@
 import React from "react";
 import "./gallery.css";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
+  const handleClicks = () => {
+    // Scroll to the top of the SingleItemDetail component
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="gallery_container">
       <div className="gallery_grid">
@@ -21,7 +26,10 @@ const Gallery = () => {
         <div className="gallery_sub_grid jk">
           <h3>men</h3>
           <h2>The base collection - Ideal every day.</h2>
-          <button>shop now</button>
+
+          <Link className="linka" to="/shop">
+            <button onClick={handleClicks}>shop now</button>
+          </Link>
         </div>
       </div>
     </div>

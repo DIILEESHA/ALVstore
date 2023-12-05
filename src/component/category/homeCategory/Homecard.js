@@ -15,6 +15,11 @@ const Home = () => {
     return result;
   }, []);
 
+  const handleClicks = () => {
+    // Scroll to the top of the SingleItemDetail component
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="home_container">
       <h2 className="home_title">SUMMER COLLECTION</h2>
@@ -22,11 +27,12 @@ const Home = () => {
 
       <div className="home_grid">
         {mixedData.map((product) => (
-          <Link
-           className="linka"
-            to={`/product/${product.cat}/${product.id}`}
-          >
-            <div key={product.id} className="home_product_sub">
+          <Link className="linka" to={`/product/${product.cat}/${product.id}`}>
+            <div
+              key={product.id}
+              className="home_product_sub"
+              onClick={handleClicks}
+            >
               <img src={product.image} alt={product.name} />
               <h2>{product.cat}</h2>
               <h3>{product.name}</h3>

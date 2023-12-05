@@ -6,8 +6,9 @@ import Gallery from "../Photo/Gallery";
 import Trendcard from "../category/homeCategory/Trrendcard";
 
 const Home = () => {
+ 
   return (
-    <div>
+    <div >
       <Slid />
       <Homecard />
       <Gallery />
