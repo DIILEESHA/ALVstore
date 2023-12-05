@@ -23,7 +23,7 @@ const Trrendcard = () => {
       <div className="home_grid">
         {mixedData.map((product) => (
           <Link
-            style={{ color: "inherit", textDecoration: "none" }}
+           className="linka"
             to={`/product/${product.cat}/${product.id}`}
           >
             <div key={product.id} className="home_product_sub">

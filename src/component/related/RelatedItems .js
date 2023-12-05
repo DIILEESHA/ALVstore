@@ -12,7 +12,7 @@ function RelatedItems({ category }) {
       <div className="product_grid">
         {slicer.map((item) => (
           <Link
-            style={{ color: "inherit", textDecoration: "none" }}
+            className="linka"
             to={`/category/${category}/${item.id}`}
           >
             <div className="product_sub">

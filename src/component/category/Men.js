@@ -15,7 +15,7 @@ const Men = () => {
       {!loading && (
         <>
           <div className="men_navigator">
-            <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link to="/" className="linka">
               <h2>home</h2>
             </Link>
             <h2>|</h2>

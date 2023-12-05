@@ -89,16 +89,31 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <div className="menu_option duka" style={{ right: isOpen ? "0px" : "-50vw" }}>
+      <div
+        className="menu_option duka"
+        style={{ right: isOpen ? "0px" : "-50vw" }}
+      >
         <ul className="menu_ul">
           <div className="hjt" onClick={() => setOpen(!isOpen)}>
-            <li className="menu_li">buy t-shirts</li>
+            <li className="menu_li">
+              <Link to="/shop" className="linka">
+                buy t-shirts
+              </Link>
+            </li>
           </div>
           <div className="hjt" onClick={() => setOpen(!isOpen)}>
-            <li className="menu_li">women</li>
+            <li className="menu_li">
+              <Link to="/product/women" className="linka">
+                women
+              </Link>
+            </li>
           </div>
           <div className="hjt" onClick={() => setOpen(!isOpen)}>
-            <li className="menu_li">men</li>
+            <li className="menu_li">
+              <Link to="/product/men" className="linka">
+                men
+              </Link>
+            </li>
           </div>
           <div className="hjt" onClick={() => setOpen(!isOpen)}>
             <li className="menu_li">about</li>

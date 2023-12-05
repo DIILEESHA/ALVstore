@@ -124,7 +124,7 @@ li {
     opacity: 1; /* Fully opaque */
     transition: 0.5s all ease-in-out;
   }
-  .duka{
+  .duka {
   }
 
   .menu_ul {
@@ -167,14 +167,15 @@ li {
     border-right-color: transparent;
   }
   .hjt:hover {
-    border-top-color: teal;
-    border-left-color: yellow;
-    border-right-color: red;
-    border-bottom-color: teal;
+    border-top-color: rgb(13, 207, 207);
+    border-left-color: rgb(241, 241, 12);
+    border-right-color: rgb(236, 19, 19);
+    border-bottom-color: rgb(16, 238, 238);
     cursor: pointer;
-    transition: 0.7s all ease;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
+    transition: 0.9s all ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius:10px;
+    opacity: 90%;
   }
 }
 

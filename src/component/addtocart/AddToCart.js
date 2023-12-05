@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { Link } from "react-router-dom";
 import { FaRegWindowClose } from "react-icons/fa";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -35,13 +35,10 @@ const CartPage = () => {
     console.log("Checkout clicked");
   };
 
-
-  
-
   return (
     <div className="card">
       <div className="men_navigator">
-        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+        <Link to="/" className="linka">
           <h2>home</h2>
         </Link>
         <h2>|</h2>
@@ -57,7 +54,7 @@ const CartPage = () => {
             alt=""
           />
           <p>Your cart is currently empty.</p>
-          <Link style={{ color: "inherit", textDecoration: "none" }} to="/shop">
+          <Link className="linka" to="/shop">
             <button>continue shopping</button>
           </Link>
         </div>

@@ -15,6 +15,7 @@
 .card {
   /* display: flex; */
   height: auto;
+  overflow: hidden;
 }
 .card_img img {
   width: 160px;

@@ -7,10 +7,7 @@ function ProductList({ products, category }) {
     <div className="product_container">
       <div className="product_grid">
         {products.map((product) => (
-          <Link
-            style={{ color: "inherit", textDecoration: "none" }}
-            to={`/product/${product.cat}/${product.id}`}
-          >
+          <Link className="linka" to={`/product/${product.cat}/${product.id}`}>
             <div className="product_sub">
               <img src={product.image} alt={product.name} />
               <h2>{product.cat}</h2>

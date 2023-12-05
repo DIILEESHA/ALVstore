@@ -34,7 +34,7 @@ const Slid = () => {
               <div class="slider_btn_container">
                 <button class="slider_btn" tabindex="0">
                   <Link
-                    style={{ color: "inherit", textDecoration: "none" }}
+                    className="linka"
                     to="/shop"
                   >
                     SHOP NOW

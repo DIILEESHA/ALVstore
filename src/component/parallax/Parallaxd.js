@@ -20,7 +20,7 @@ const Parallaxd = () => {
             <h2>Find your unique style.</h2>
 
             <Link
-              style={{ color: "inherit", textDecoration: "none" }}
+             className="linka"
               to="/shop"
             >
               <button>shop collection</button>

@@ -22,7 +22,7 @@ const Tshirts = () => {
       {!loading && (
         <>
           <div className="men_navigator">
-            <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link className="linka">
               <h2>home</h2>
             </Link>
             <h2>|</h2>

@@ -1,24 +1,21 @@
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../category/data.json";
 import Lightbox from "react-image-lightbox";
 import "./single.css";
-import "react-image-lightbox/style.css"; // Import the styles
+import "react-image-lightbox/style.css"; 
 import { CiMaximize1 } from "react-icons/ci";
-import AddToCart from "../addtocart/AddToCart";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaRegDotCircle } from "react-icons/fa";
 import RelatedItems from "../related/RelatedItems ";
 
-const SingleItemDetail = ({}) => {
+const SingleItemDetail = () => {
   const { category, itemId } = useParams();
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [quantity, setQuantity] = useState(1);
-  const navigate = useNavigate();
-  const notify = () => toast("Wow so easy!");
 
   const itemData = data[category]?.find(
     (item) => item.id === parseInt(itemId, 10)
@@ -39,10 +36,8 @@ const SingleItemDetail = ({}) => {
   };
 
   const handleAddToCart = () => {
-    // Calculate the total price based on the minimum price
     const totalPrice = itemData.price.min * quantity;
 
-    // Create an object representing the item
     const newItem = {
       id: itemData.id,
       name: itemData.name,
@@ -58,7 +53,6 @@ const SingleItemDetail = ({}) => {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
 
     toast("Item added to cart!", { type: "success" });
-    // navigate("/cart");
   };
 
   const images = [

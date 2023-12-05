@@ -35,7 +35,7 @@
   font-weight: 700;
 }
 .sub_content button {
-    background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   /* background: #000; */
   border: 1px solid #000;
 
@@ -48,6 +48,31 @@
   cursor: pointer;
 }
 
-.bgClassName{
-object-fit: cover;
+.bgClassName {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1219px) {
+  .para {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .content {
+    height: 70vh;
+  }
+  .para{
+    padding: 15px;
+  }
+  .sub_content h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 543px) {
+  .para {
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; */
+  }
 }
