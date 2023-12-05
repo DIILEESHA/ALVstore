@@ -27,7 +27,7 @@
 .card_sm_divide {
   display: flex;
   gap: 10px;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
 }
@@ -186,7 +186,7 @@ h3 {
   }
   .tun {
     overflow-y: scroll;
-    height: 70vh;
+    height: 40vh;
   }
 }
 
@@ -208,6 +208,12 @@ h3 {
   .card_img img{
     height: 60vh;
     width: 100%;
+  }
+
+  .ds{
+    color: #ddd;
+    background: black;
+    padding: 3px;
   }
   .fttt {
     width: 100%;
