@@ -9,13 +9,17 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaRegDotCircle } from "react-icons/fa";
 import RelatedItems from "../related/RelatedItems ";
+import Spinner from "../spinner/Spinner";
+import useLoading from "../category/useLoading";
 
 const SingleItemDetail = () => {
+  const loading = useLoading();
   const { category, itemId } = useParams();
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  
 
   const itemData = data[category]?.find(
     (item) => item.id === parseInt(itemId, 10)
@@ -73,6 +77,9 @@ const SingleItemDetail = () => {
 
   return (
     <div className="single_item_detail">
+      {loading && <Spinner />}
+      {!loading && (
+        <>
       <div className="singa">
         <div className="single_sub_item_detail ">
           <div className="ok">
@@ -221,8 +228,9 @@ const SingleItemDetail = () => {
         )}
       </div>
       <span className="meow">related products</span>
-
       <RelatedItems category={itemData.cat} />
+      </>
+      )}
     </div>
   );
 };

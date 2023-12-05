@@ -2,7 +2,7 @@
 
 .spinner_c {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(233, 224, 224, 0.2);
 }
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);

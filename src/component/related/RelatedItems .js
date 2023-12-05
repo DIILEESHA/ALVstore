@@ -6,11 +6,11 @@ import data from "../category/data.json";
 function RelatedItems({ category }) {
   const relatedItems = data[category] || [];
 
-  const slicer = relatedItems.slice(0,4)
+  // const slicer = relatedItems.slice(0,4)
   return (
     <div className="product_container dop">
       <div className="product_grid">
-        {slicer.map((item) => (
+        {relatedItems.map((item) => (
           <Link
             className="linka"
             to={`/category/${category}/${item.id}`}

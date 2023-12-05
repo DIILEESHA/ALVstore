@@ -204,6 +204,11 @@ h3 {
     width: 100%;
     object-fit: cover;
   }
+  
+  .card_img img{
+    height: 60vh;
+    width: 100%;
+  }
   .fttt {
     width: 100%;
   }
@@ -212,5 +217,11 @@ h3 {
   }
   .lp button {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 543px) {
+  .card_grid_main {
+    padding: 20px;
   }
 }

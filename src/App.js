@@ -23,6 +23,7 @@ function App() {
           <Route path="/shop" element={<Tshirts />} />
           <Route path="/cart" element={<AddToCart />} />
           <Route path="/product/:category/:itemId" element={<Singleitem />} />
+          <Route path="/category/:category/:itemId" element={<Singleitem />} />
         </Routes>
         <Footer />
       </BrowserRouter>
