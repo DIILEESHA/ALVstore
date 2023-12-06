@@ -19,7 +19,7 @@ simple shopping experience that puts the focus on the products.</p>
 
 
 <div align='center'>
-<img src='https://i.imgur.com/rSS87WE.png'/>
+<img src='https://i.imgur.com/7Q0wlsm.png'/>
 </div>
 
 <br><br>
