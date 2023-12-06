@@ -1,4 +1,4 @@
-<div align='center'><h2 style="color:teal">ALVstore♡/h2></div>
+<div align='center'><h2 style="color:teal">ALVstore♡</h2></div>
 
 <h2>About the project</h2>
 
